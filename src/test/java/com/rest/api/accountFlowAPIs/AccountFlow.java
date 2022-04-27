@@ -12,11 +12,10 @@ import org.testng.annotations.BeforeClass;
 //https://api.dev.rocketkor-nonprod.net/accountflow/api/portal/employees/quick-info
 //https://api.dev.rocketkor-nonprod.net/accountflow/api/portal/business-accounts/legal-entity-types
 
-public class AccountFlow extends TestBase {
+public abstract class AccountFlow extends TestBase {
 
     public  static Response resp;
     public  Cookie cookie;
-    //CommonHTTP common;
     public static String API_Path;
 
     @BeforeClass
@@ -25,5 +24,4 @@ public class AccountFlow extends TestBase {
         cookie = resp.getDetailedCookie("access_token");
         API_Path= Route.ACCOUNT;
     }
-
 }

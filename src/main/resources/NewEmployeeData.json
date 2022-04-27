@@ -1,0 +1,8 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "middleName": "Ez",
+  "email": "hgfhgf@test.com",
+  "mobileNumber": "2035515555",
+  "permissionRoles": ["ADMIN"]
+}

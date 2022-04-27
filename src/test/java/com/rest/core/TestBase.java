@@ -1,32 +1,22 @@
 package com.rest.core;
 
+import com.rest.api.SpecBuilder;
 import com.rest.utils.PropertyLoader;
-import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.RequestLoggingFilter;
-import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 import org.json.simple.JSONObject;
-import org.testng.annotations.BeforeClass;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 
-public class TestBase {
+public abstract class TestBase {
     public static String baseUrl;
     public static String username;
     public static String password;
-    public static RequestSpecification baseSetup_requestSpec;
-    public static ResponseSpecification responseSpecification;
-    public static PrintStream log;
 
-    public TestBase(){
+
+    public  TestBase(){
         try{
             PropertyLoader.loadProperties();
             baseUrl = System.getProperty("url");
@@ -37,35 +27,30 @@ public class TestBase {
         }
     }
 
-        @BeforeClass
-        public static void setup() throws IOException{
-            log =new PrintStream(new FileOutputStream("logging.txt"));
-            baseSetup_requestSpec= new RequestSpecBuilder().setBaseUri(baseUrl)
-                    .addHeader("Content-Type", "application/json")
-                    .addFilter(RequestLoggingFilter.logRequestTo(log))
-                    .addFilter(ResponseLoggingFilter.logResponseTo(log))
-                    .build();
-            responseSpecification = new ResponseSpecBuilder()
-                    .expectStatusCode(200)
-                    .build();
-            RestAssured.requestSpecification = baseSetup_requestSpec;
-            RestAssured.responseSpecification = responseSpecification;
-        }
-
+//RequestLoggingFilter.logRequestTo(log)
     public Response getLoginResponseAndAccessToken(){
         JSONObject json = new JSONObject();
         json.put("userName",username);
         json.put("password",password);
 
 
-        Response resp = given().spec(RestAssured.requestSpecification).
+        Response resp = given(SpecBuilder.getRequestSpec()).
                 body(json).
                 post(Route.LOGIN).
                 then().extract().response();
         return resp;
     }
 
-
+    //*** Adding headers for the create employee API
+    public HashMap setHeader(){
+        HashMap<String,String> headerMap= new HashMap<>();
+        headerMap.put("Referer",baseUrl);
+        headerMap.put("Accept", "application/json, text/plain, */*");
+        headerMap.put("Accept-Encoding", "gzip, deflate, br");
+        headerMap.put("Accept-Language", "en-US,en;q=0.9,fr;q=0.8");
+        headerMap.put("Access-Control-Allow-Credentials" ,"true");
+        return headerMap;
+    }
     public void beforeMethod(Method m){
             System.out.println("STARTING TEST: " + m.getName());
             System.out.println("THREAD ID: " + Thread.currentThread().getId());

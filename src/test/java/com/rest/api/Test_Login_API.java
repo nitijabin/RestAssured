@@ -3,9 +3,9 @@ package com.rest.api;
 import com.rest.core.TestBase;
 import io.restassured.http.Cookie;
 import io.restassured.response.Response;
-import io.restassured.specification.QueryableRequestSpecification;
-import io.restassured.specification.SpecificationQuerier;
+import org.hamcrest.Description;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -21,12 +21,12 @@ public class Test_Login_API extends TestBase {
         cookie = resp.getDetailedCookie("access_token");
     }
 
-    @org.testng.annotations.Test
+    @Test(description = "Verify Login Status code")
     public void validate_login_status_code(){
         assertThat(resp.statusCode(), is(equalTo(200)));
     }
 
-    @org.testng.annotations.Test
+    @Test(description = "Verify Login response body")
     public void validate_login_response_body(){
         assertThat(resp.path("expires_in").toString(),equalTo("300"));
     }

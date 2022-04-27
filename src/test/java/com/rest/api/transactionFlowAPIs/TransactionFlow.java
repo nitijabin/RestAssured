@@ -19,7 +19,6 @@ public abstract class TransactionFlow extends TestBase
 
     public  static Response resp;
     public Cookie cookie;
-    CommonHTTP common;
     public static String API_Path;
     public static JsonPath jsonPath ;
     @BeforeClass

@@ -1,0 +1,12 @@
+{
+  "debitFinancialAccountId":"402cac61-0dd9-4ee1-9c3c-deab4d59a30a",
+  "creditFinancialAccountId":"69176b81-3550-4ffc-bbf9-5e7debd10dc9",
+  "paymentReasonId":"63a15325-435d-4333-bfa0-9fe6fffcdc1c",
+  "amount":100,
+  "provider":"MC_SEND",
+  "currency":"USD",
+  "countryCode":"US",
+  "transactionType":"SEND",
+  "receiverId":"82d81578-3419-4011-a6e2-85d33f1ff06e",
+  "receiverType":"RECIPIENT"
+}

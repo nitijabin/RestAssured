@@ -1,0 +1,615 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1651004788.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "createdAt",
+    "debitFinancialAccountId",
+    "maskedDebitAccountNumber",
+    "creditFinancialAccountId",
+    "maskedCreditAccountNumber",
+    "transactionType",
+    "paymentReasonId",
+    "paymentReason",
+    "amount",
+    "provider",
+    "currency",
+    "countryCode",
+    "requestorId",
+    "requestorType",
+    "requestedSendDate",
+    "businessAccountId",
+    "receiverId",
+    "receiverType",
+    "latestStatus",
+    "debitFinancialAccount",
+    "creditFinancialAccount"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2d14c628-8dc8-40b3-b19e-08e1ad12ff72"
+      ],
+      "pattern": "^.*$"
+    },
+    "createdAt": {
+      "$id": "#root/createdAt",
+      "title": "Createdat",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2022-04-26T19:53:39.288533396Z"
+      ],
+      "pattern": "^.*$"
+    },
+    "debitFinancialAccountId": {
+      "$id": "#root/debitFinancialAccountId",
+      "title": "Debitfinancialaccountid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "402cac61-0dd9-4ee1-9c3c-deab4d59a30a"
+      ],
+      "pattern": "^.*$"
+    },
+    "maskedDebitAccountNumber": {
+      "$id": "#root/maskedDebitAccountNumber",
+      "title": "Maskeddebitaccountnumber",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "************9904"
+      ],
+      "pattern": "^.*$"
+    },
+    "creditFinancialAccountId": {
+      "$id": "#root/creditFinancialAccountId",
+      "title": "Creditfinancialaccountid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "69176b81-3550-4ffc-bbf9-5e7debd10dc9"
+      ],
+      "pattern": "^.*$"
+    },
+    "maskedCreditAccountNumber": {
+      "$id": "#root/maskedCreditAccountNumber",
+      "title": "Maskedcreditaccountnumber",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "************9904"
+      ],
+      "pattern": "^.*$"
+    },
+    "transactionType": {
+      "$id": "#root/transactionType",
+      "title": "Transactiontype",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "SEND"
+      ],
+      "pattern": "^.*$"
+    },
+    "paymentReasonId": {
+      "$id": "#root/paymentReasonId",
+      "title": "Paymentreasonid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "63a15325-435d-4333-bfa0-9fe6fffcdc1c"
+      ],
+      "pattern": "^.*$"
+    },
+    "paymentReason": {
+      "$id": "#root/paymentReason",
+      "title": "Paymentreason",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Sponsored pay advance disbursements"
+      ],
+      "pattern": "^.*$"
+    },
+    "amount": {
+      "$id": "#root/amount",
+      "title": "Amount",
+      "type": "integer",
+      "examples": [
+        100
+      ],
+      "default": 0
+    },
+    "provider": {
+      "$id": "#root/provider",
+      "title": "Provider",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "MC_SEND"
+      ],
+      "pattern": "^.*$"
+    },
+    "currency": {
+      "$id": "#root/currency",
+      "title": "Currency",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "USD"
+      ],
+      "pattern": "^.*$"
+    },
+    "countryCode": {
+      "$id": "#root/countryCode",
+      "title": "Countrycode",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "US"
+      ],
+      "pattern": "^.*$"
+    },
+    "requestorId": {
+      "$id": "#root/requestorId",
+      "title": "Requestorid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "87ce91da-1f01-4477-b626-6d1ba7c98a24"
+      ],
+      "pattern": "^.*$"
+    },
+    "requestorType": {
+      "$id": "#root/requestorType",
+      "title": "Requestortype",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "EMPLOYEE"
+      ],
+      "pattern": "^.*$"
+    },
+    "requestedSendDate": {
+      "$id": "#root/requestedSendDate",
+      "title": "Requestedsenddate",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2022-04-26T19:53:39.288195588Z"
+      ],
+      "pattern": "^.*$"
+    },
+    "businessAccountId": {
+      "$id": "#root/businessAccountId",
+      "title": "Businessaccountid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "bbb30ec0-6947-4719-b564-fd91115bf50f"
+      ],
+      "pattern": "^.*$"
+    },
+    "receiverId": {
+      "$id": "#root/receiverId",
+      "title": "Receiverid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "82d81578-3419-4011-a6e2-85d33f1ff06e"
+      ],
+      "pattern": "^.*$"
+    },
+    "receiverType": {
+      "$id": "#root/receiverType",
+      "title": "Receivertype",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "RECIPIENT"
+      ],
+      "pattern": "^.*$"
+    },
+    "latestStatus": {
+      "$id": "#root/latestStatus",
+      "title": "Lateststatus",
+      "type": "object",
+      "required": [
+        "id",
+        "createdAt",
+        "transactionId",
+        "status",
+        "message"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/latestStatus/id",
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "b1450184-bf33-4bd3-9bf2-6d547b9e3fb4"
+          ],
+          "pattern": "^.*$"
+        },
+        "createdAt": {
+          "$id": "#root/latestStatus/createdAt",
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "2022-04-26T19:53:39.603101466Z"
+          ],
+          "pattern": "^.*$"
+        },
+        "transactionId": {
+          "$id": "#root/latestStatus/transactionId",
+          "title": "Transactionid",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "2d14c628-8dc8-40b3-b19e-08e1ad12ff72"
+          ],
+          "pattern": "^.*$"
+        },
+        "status": {
+          "$id": "#root/latestStatus/status",
+          "title": "Status",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "PENDING"
+          ],
+          "pattern": "^.*$"
+        },
+        "message": {
+          "$id": "#root/latestStatus/message",
+          "title": "Message",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "send to processing domain"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "debitFinancialAccount": {
+      "$id": "#root/debitFinancialAccount",
+      "title": "Debitfinancialaccount",
+      "type": "object",
+      "required": [
+        "id",
+        "createdAt",
+        "maskedAccountNumber",
+        "state",
+        "accountType",
+        "bankAccount"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/debitFinancialAccount/id",
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "402cac61-0dd9-4ee1-9c3c-deab4d59a30a"
+          ],
+          "pattern": "^.*$"
+        },
+        "createdAt": {
+          "$id": "#root/debitFinancialAccount/createdAt",
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "2022-03-31T17:22:52.523883Z"
+          ],
+          "pattern": "^.*$"
+        },
+        "maskedAccountNumber": {
+          "$id": "#root/debitFinancialAccount/maskedAccountNumber",
+          "title": "Maskedaccountnumber",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "************9904"
+          ],
+          "pattern": "^.*$"
+        },
+        "state": {
+          "$id": "#root/debitFinancialAccount/state",
+          "title": "State",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "ACTIVE"
+          ],
+          "pattern": "^.*$"
+        },
+        "accountType": {
+          "$id": "#root/debitFinancialAccount/accountType",
+          "title": "Accounttype",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "EXTERNAL"
+          ],
+          "pattern": "^.*$"
+        },
+        "bankAccount": {
+          "$id": "#root/debitFinancialAccount/bankAccount",
+          "title": "Bankaccount",
+          "type": "object",
+          "required": [
+            "type",
+            "bankName",
+            "routingNo",
+            "accountNumber",
+            "nameOnAccount"
+          ],
+          "properties": {
+            "type": {
+              "$id": "#root/debitFinancialAccount/bankAccount/type",
+              "title": "Type",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "CHECKING"
+              ],
+              "pattern": "^.*$"
+            },
+            "bankName": {
+              "$id": "#root/debitFinancialAccount/bankAccount/bankName",
+              "title": "Bankname",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Test"
+              ],
+              "pattern": "^.*$"
+            },
+            "routingNo": {
+              "$id": "#root/debitFinancialAccount/bankAccount/routingNo",
+              "title": "Routingno",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "123456789"
+              ],
+              "pattern": "^.*$"
+            },
+            "accountNumber": {
+              "$id": "#root/debitFinancialAccount/bankAccount/accountNumber",
+              "title": "Accountnumber",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "************9904"
+              ],
+              "pattern": "^.*$"
+            },
+            "nameOnAccount": {
+              "$id": "#root/debitFinancialAccount/bankAccount/nameOnAccount",
+              "title": "Nameonaccount",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Test acc2"
+              ],
+              "pattern": "^.*$"
+            }
+          }
+        }
+
+      }
+    }
+  ,
+    "creditFinancialAccount": {
+      "$id": "#root/creditFinancialAccount",
+      "title": "Creditfinancialaccount",
+      "type": "object",
+      "required": [
+        "id",
+        "createdAt",
+        "maskedAccountNumber",
+        "state",
+        "accountType",
+        "card"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/creditFinancialAccount/id",
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "69176b81-3550-4ffc-bbf9-5e7debd10dc9"
+          ],
+          "pattern": "^.*$"
+        },
+        "createdAt": {
+          "$id": "#root/creditFinancialAccount/createdAt",
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "2022-03-31T17:26:17.151407Z"
+          ],
+          "pattern": "^.*$"
+        },
+        "maskedAccountNumber": {
+          "$id": "#root/creditFinancialAccount/maskedAccountNumber",
+          "title": "Maskedaccountnumber",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "************9904"
+          ],
+          "pattern": "^.*$"
+        },
+        "state": {
+          "$id": "#root/creditFinancialAccount/state",
+          "title": "State",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "ACTIVE"
+          ],
+          "pattern": "^.*$"
+        },
+        "accountType": {
+          "$id": "#root/creditFinancialAccount/accountType",
+          "title": "Accounttype",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "EXTERNAL"
+          ],
+          "pattern": "^.*$"
+        },
+        "card": {
+          "$id": "#root/creditFinancialAccount/card",
+          "title": "Card",
+          "type": "object",
+          "required": [
+            "firstName",
+            "lastName",
+            "type",
+            "cardNumber",
+            "expiry",
+            "address"
+          ],
+          "properties": {
+            "firstName": {
+              "$id": "#root/creditFinancialAccount/card/firstName",
+              "title": "Firstname",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Aanew"
+              ],
+              "pattern": "^.*$"
+            },
+            "lastName": {
+              "$id": "#root/creditFinancialAccount/card/lastName",
+              "title": "Lastname",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Test"
+              ],
+              "pattern": "^.*$"
+            },
+            "type": {
+              "$id": "#root/creditFinancialAccount/card/type",
+              "title": "Type",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "DEBIT"
+              ],
+              "pattern": "^.*$"
+            },
+            "cardNumber": {
+              "$id": "#root/creditFinancialAccount/card/cardNumber",
+              "title": "Cardnumber",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "************9904"
+              ],
+              "pattern": "^.*$"
+            },
+            "expiry": {
+              "$id": "#root/creditFinancialAccount/card/expiry",
+              "title": "Expiry",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "2024-11"
+              ],
+              "pattern": "^.*$"
+            },
+            "address": {
+              "$id": "#root/creditFinancialAccount/card/address",
+              "title": "Address",
+              "type": "object",
+              "required": [
+                "addressLine1",
+                "city",
+                "state",
+                "country",
+                "postalCode"
+              ],
+              "properties": {
+                "addressLine1": {
+                  "$id": "#root/creditFinancialAccount/card/address/addressLine1",
+                  "title": "Addressline1",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "230 5th Ave"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "city": {
+                  "$id": "#root/creditFinancialAccount/card/address/city",
+                  "title": "City",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "New York"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "state": {
+                  "$id": "#root/creditFinancialAccount/card/address/state",
+                  "title": "State",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "NY"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "country": {
+                  "$id": "#root/creditFinancialAccount/card/address/country",
+                  "title": "Country",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "USA"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "postalCode": {
+                  "$id": "#root/creditFinancialAccount/card/address/postalCode",
+                  "title": "Postalcode",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "10001"
+                  ],
+                  "pattern": "^.*$"
+                }
+              }
+            }
+
+          }
+        }
+
+      }
+    }
+
+  }
+}
