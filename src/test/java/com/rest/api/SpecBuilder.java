@@ -24,8 +24,8 @@ public class SpecBuilder {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return new RequestSpecBuilder().
-                setBaseUri(baseUrl)
+        return new RequestSpecBuilder()
+                .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON)
                 .addFilter(new AllureRestAssured())
                 .addFilter(ResponseLoggingFilter.logResponseTo(log))
@@ -35,6 +35,4 @@ public class SpecBuilder {
     public static ResponseSpecification getResponseSpec(){
         return new ResponseSpecBuilder().build();
     }
-
-
 }

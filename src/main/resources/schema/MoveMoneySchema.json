@@ -1,7 +1,6 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://example.com/object1651004788.json",
   "title": "Root",
   "type": "object",
   "required": [
@@ -34,9 +33,6 @@
       "title": "Id",
       "type": "string",
       "default": "",
-      "examples": [
-        "2d14c628-8dc8-40b3-b19e-08e1ad12ff72"
-      ],
       "pattern": "^.*$"
     },
     "createdAt": {
@@ -44,9 +40,6 @@
       "title": "Createdat",
       "type": "string",
       "default": "",
-      "examples": [
-        "2022-04-26T19:53:39.288533396Z"
-      ],
       "pattern": "^.*$"
     },
     "debitFinancialAccountId": {
@@ -54,9 +47,6 @@
       "title": "Debitfinancialaccountid",
       "type": "string",
       "default": "",
-      "examples": [
-        "402cac61-0dd9-4ee1-9c3c-deab4d59a30a"
-      ],
       "pattern": "^.*$"
     },
     "maskedDebitAccountNumber": {
@@ -64,9 +54,6 @@
       "title": "Maskeddebitaccountnumber",
       "type": "string",
       "default": "",
-      "examples": [
-        "************9904"
-      ],
       "pattern": "^.*$"
     },
     "creditFinancialAccountId": {
@@ -74,9 +61,6 @@
       "title": "Creditfinancialaccountid",
       "type": "string",
       "default": "",
-      "examples": [
-        "69176b81-3550-4ffc-bbf9-5e7debd10dc9"
-      ],
       "pattern": "^.*$"
     },
     "maskedCreditAccountNumber": {
@@ -84,9 +68,6 @@
       "title": "Maskedcreditaccountnumber",
       "type": "string",
       "default": "",
-      "examples": [
-        "************9904"
-      ],
       "pattern": "^.*$"
     },
     "transactionType": {
@@ -94,9 +75,6 @@
       "title": "Transactiontype",
       "type": "string",
       "default": "",
-      "examples": [
-        "SEND"
-      ],
       "pattern": "^.*$"
     },
     "paymentReasonId": {
@@ -104,9 +82,6 @@
       "title": "Paymentreasonid",
       "type": "string",
       "default": "",
-      "examples": [
-        "63a15325-435d-4333-bfa0-9fe6fffcdc1c"
-      ],
       "pattern": "^.*$"
     },
     "paymentReason": {
@@ -114,18 +89,12 @@
       "title": "Paymentreason",
       "type": "string",
       "default": "",
-      "examples": [
-        "Sponsored pay advance disbursements"
-      ],
       "pattern": "^.*$"
     },
     "amount": {
       "$id": "#root/amount",
       "title": "Amount",
       "type": "integer",
-      "examples": [
-        100
-      ],
       "default": 0
     },
     "provider": {
@@ -133,9 +102,6 @@
       "title": "Provider",
       "type": "string",
       "default": "",
-      "examples": [
-        "MC_SEND"
-      ],
       "pattern": "^.*$"
     },
     "currency": {
@@ -143,9 +109,6 @@
       "title": "Currency",
       "type": "string",
       "default": "",
-      "examples": [
-        "USD"
-      ],
       "pattern": "^.*$"
     },
     "countryCode": {
@@ -153,9 +116,6 @@
       "title": "Countrycode",
       "type": "string",
       "default": "",
-      "examples": [
-        "US"
-      ],
       "pattern": "^.*$"
     },
     "requestorId": {
@@ -163,9 +123,6 @@
       "title": "Requestorid",
       "type": "string",
       "default": "",
-      "examples": [
-        "87ce91da-1f01-4477-b626-6d1ba7c98a24"
-      ],
       "pattern": "^.*$"
     },
     "requestorType": {
@@ -173,9 +130,6 @@
       "title": "Requestortype",
       "type": "string",
       "default": "",
-      "examples": [
-        "EMPLOYEE"
-      ],
       "pattern": "^.*$"
     },
     "requestedSendDate": {
@@ -183,9 +137,6 @@
       "title": "Requestedsenddate",
       "type": "string",
       "default": "",
-      "examples": [
-        "2022-04-26T19:53:39.288195588Z"
-      ],
       "pattern": "^.*$"
     },
     "businessAccountId": {
@@ -193,9 +144,6 @@
       "title": "Businessaccountid",
       "type": "string",
       "default": "",
-      "examples": [
-        "bbb30ec0-6947-4719-b564-fd91115bf50f"
-      ],
       "pattern": "^.*$"
     },
     "receiverId": {
@@ -203,9 +151,6 @@
       "title": "Receiverid",
       "type": "string",
       "default": "",
-      "examples": [
-        "82d81578-3419-4011-a6e2-85d33f1ff06e"
-      ],
       "pattern": "^.*$"
     },
     "receiverType": {
@@ -213,9 +158,6 @@
       "title": "Receivertype",
       "type": "string",
       "default": "",
-      "examples": [
-        "RECIPIENT"
-      ],
       "pattern": "^.*$"
     },
     "latestStatus": {
@@ -235,9 +177,6 @@
           "title": "Id",
           "type": "string",
           "default": "",
-          "examples": [
-            "b1450184-bf33-4bd3-9bf2-6d547b9e3fb4"
-          ],
           "pattern": "^.*$"
         },
         "createdAt": {
@@ -245,9 +184,6 @@
           "title": "Createdat",
           "type": "string",
           "default": "",
-          "examples": [
-            "2022-04-26T19:53:39.603101466Z"
-          ],
           "pattern": "^.*$"
         },
         "transactionId": {
@@ -255,9 +191,6 @@
           "title": "Transactionid",
           "type": "string",
           "default": "",
-          "examples": [
-            "2d14c628-8dc8-40b3-b19e-08e1ad12ff72"
-          ],
           "pattern": "^.*$"
         },
         "status": {
@@ -265,9 +198,6 @@
           "title": "Status",
           "type": "string",
           "default": "",
-          "examples": [
-            "PENDING"
-          ],
           "pattern": "^.*$"
         },
         "message": {
@@ -275,9 +205,6 @@
           "title": "Message",
           "type": "string",
           "default": "",
-          "examples": [
-            "send to processing domain"
-          ],
           "pattern": "^.*$"
         }
       }
@@ -301,9 +228,6 @@
           "title": "Id",
           "type": "string",
           "default": "",
-          "examples": [
-            "402cac61-0dd9-4ee1-9c3c-deab4d59a30a"
-          ],
           "pattern": "^.*$"
         },
         "createdAt": {
@@ -311,9 +235,6 @@
           "title": "Createdat",
           "type": "string",
           "default": "",
-          "examples": [
-            "2022-03-31T17:22:52.523883Z"
-          ],
           "pattern": "^.*$"
         },
         "maskedAccountNumber": {
@@ -321,9 +242,6 @@
           "title": "Maskedaccountnumber",
           "type": "string",
           "default": "",
-          "examples": [
-            "************9904"
-          ],
           "pattern": "^.*$"
         },
         "state": {
@@ -331,9 +249,6 @@
           "title": "State",
           "type": "string",
           "default": "",
-          "examples": [
-            "ACTIVE"
-          ],
           "pattern": "^.*$"
         },
         "accountType": {
@@ -341,9 +256,6 @@
           "title": "Accounttype",
           "type": "string",
           "default": "",
-          "examples": [
-            "EXTERNAL"
-          ],
           "pattern": "^.*$"
         },
         "bankAccount": {
@@ -363,9 +275,6 @@
               "title": "Type",
               "type": "string",
               "default": "",
-              "examples": [
-                "CHECKING"
-              ],
               "pattern": "^.*$"
             },
             "bankName": {
@@ -373,9 +282,6 @@
               "title": "Bankname",
               "type": "string",
               "default": "",
-              "examples": [
-                "Test"
-              ],
               "pattern": "^.*$"
             },
             "routingNo": {
@@ -383,9 +289,6 @@
               "title": "Routingno",
               "type": "string",
               "default": "",
-              "examples": [
-                "123456789"
-              ],
               "pattern": "^.*$"
             },
             "accountNumber": {
@@ -393,9 +296,6 @@
               "title": "Accountnumber",
               "type": "string",
               "default": "",
-              "examples": [
-                "************9904"
-              ],
               "pattern": "^.*$"
             },
             "nameOnAccount": {
@@ -403,9 +303,6 @@
               "title": "Nameonaccount",
               "type": "string",
               "default": "",
-              "examples": [
-                "Test acc2"
-              ],
               "pattern": "^.*$"
             }
           }
@@ -432,9 +329,6 @@
           "title": "Id",
           "type": "string",
           "default": "",
-          "examples": [
-            "69176b81-3550-4ffc-bbf9-5e7debd10dc9"
-          ],
           "pattern": "^.*$"
         },
         "createdAt": {
@@ -442,9 +336,6 @@
           "title": "Createdat",
           "type": "string",
           "default": "",
-          "examples": [
-            "2022-03-31T17:26:17.151407Z"
-          ],
           "pattern": "^.*$"
         },
         "maskedAccountNumber": {
@@ -452,9 +343,6 @@
           "title": "Maskedaccountnumber",
           "type": "string",
           "default": "",
-          "examples": [
-            "************9904"
-          ],
           "pattern": "^.*$"
         },
         "state": {
@@ -462,9 +350,6 @@
           "title": "State",
           "type": "string",
           "default": "",
-          "examples": [
-            "ACTIVE"
-          ],
           "pattern": "^.*$"
         },
         "accountType": {
@@ -472,9 +357,6 @@
           "title": "Accounttype",
           "type": "string",
           "default": "",
-          "examples": [
-            "EXTERNAL"
-          ],
           "pattern": "^.*$"
         },
         "card": {
@@ -495,9 +377,6 @@
               "title": "Firstname",
               "type": "string",
               "default": "",
-              "examples": [
-                "Aanew"
-              ],
               "pattern": "^.*$"
             },
             "lastName": {
@@ -505,9 +384,6 @@
               "title": "Lastname",
               "type": "string",
               "default": "",
-              "examples": [
-                "Test"
-              ],
               "pattern": "^.*$"
             },
             "type": {
@@ -515,9 +391,6 @@
               "title": "Type",
               "type": "string",
               "default": "",
-              "examples": [
-                "DEBIT"
-              ],
               "pattern": "^.*$"
             },
             "cardNumber": {
@@ -525,9 +398,6 @@
               "title": "Cardnumber",
               "type": "string",
               "default": "",
-              "examples": [
-                "************9904"
-              ],
               "pattern": "^.*$"
             },
             "expiry": {
@@ -535,9 +405,6 @@
               "title": "Expiry",
               "type": "string",
               "default": "",
-              "examples": [
-                "2024-11"
-              ],
               "pattern": "^.*$"
             },
             "address": {
@@ -557,9 +424,6 @@
                   "title": "Addressline1",
                   "type": "string",
                   "default": "",
-                  "examples": [
-                    "230 5th Ave"
-                  ],
                   "pattern": "^.*$"
                 },
                 "city": {
@@ -567,9 +431,6 @@
                   "title": "City",
                   "type": "string",
                   "default": "",
-                  "examples": [
-                    "New York"
-                  ],
                   "pattern": "^.*$"
                 },
                 "state": {
@@ -577,9 +438,6 @@
                   "title": "State",
                   "type": "string",
                   "default": "",
-                  "examples": [
-                    "NY"
-                  ],
                   "pattern": "^.*$"
                 },
                 "country": {
@@ -587,9 +445,6 @@
                   "title": "Country",
                   "type": "string",
                   "default": "",
-                  "examples": [
-                    "USA"
-                  ],
                   "pattern": "^.*$"
                 },
                 "postalCode": {
@@ -597,9 +452,6 @@
                   "title": "Postalcode",
                   "type": "string",
                   "default": "",
-                  "examples": [
-                    "10001"
-                  ],
                   "pattern": "^.*$"
                 }
               }

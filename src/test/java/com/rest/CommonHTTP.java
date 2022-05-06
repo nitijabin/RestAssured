@@ -18,6 +18,13 @@ public class CommonHTTP {
         return resp;
     }
 
+    public static Response getAPI(String api_Path, Cookie set_cookie, HashMap<String, String> params ){
+        Response resp = given(SpecBuilder.getRequestSpec()).when().cookie(set_cookie).queryParams(params).
+                get(api_Path).
+                then().spec(SpecBuilder.getResponseSpec()).extract().response();
+        return resp;
+    }
+
     public static Response postAPI(String api_Path, Cookie set_cookie,  JSONObject json){
         Response resp = given(SpecBuilder.getRequestSpec()).when().cookie(set_cookie).
                 body(json).
